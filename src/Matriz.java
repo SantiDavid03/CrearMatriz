@@ -71,4 +71,15 @@ public class Matriz {
         }
         System.out.println("La suma de la diagonal principal es: " + suma);
     }
+
+    public static void sumarDiagonalInversa(int[][] matriz) {
+        int suma = 0;
+        int filas = matriz.length;
+        int columnas = matriz[0].length;
+        int limite = Math.min(filas, columnas);
+        for (int i = 0; i < limite; i++) {
+            suma += matriz[i][columnas - 1 - i];
+        }
+        System.out.println("La suma de la diagonal inversa es: " + suma);
+    }
 }

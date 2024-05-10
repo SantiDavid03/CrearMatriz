@@ -42,6 +42,9 @@ public class Menu {
                 case 4:
                     Matriz.sumarDiagonalPrincipal(matriz);
                     break;
+                case 5:
+                    Matriz.sumarDiagonalInversa(matriz);
+                    break;
             }
             mostrarMenu();
             System.out.println("Ingrese su opción");
